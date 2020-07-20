@@ -72,7 +72,7 @@ public class ninetimesninemultiplicationtable {
 //				i = i+1;
 //			}
 			for (int j=1;j<10;j++) {
-				System.out.println((newnumber) + " x " + j + " = " + (newnumber)+j);
+				System.out.println((newnumber) + " x " + j + " = " + (newnumber)*j);
 			}
 			
 		}
