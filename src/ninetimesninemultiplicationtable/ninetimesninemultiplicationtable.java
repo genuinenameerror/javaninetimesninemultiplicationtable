@@ -1,5 +1,5 @@
 package ninetimesninemultiplicationtable;
-import java.util.Scanner;
+
 
 public class ninetimesninemultiplicationtable {
 	public static int[] calculate(int times) { // 계산 저장
@@ -17,27 +17,5 @@ public class ninetimesninemultiplicationtable {
 			System.out.println(st[n]);
 		}		
 	}
-	public static void main(String[] args) {	
-		System.out.println("");
-		System.out.println("몇 단부터 출력할까요? ");
-		Scanner scanner = new Scanner(System.in); 
-		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
-		System.out.println("입력된 수 : " + newnumber);
-		if (newnumber <2) {
-			System.out.println("잘못 입력했습니다");
-			
-		}
-		else if (newnumber>9) {
-			System.out.println("잘못 입력했습니다");
-		}
-		else {
-			int[] k = calculate(newnumber);
-			print(k);
-			System.out.println(" ");
-			for (int i=2;i<10;i++) {
-				int[] general = calculate(i);
-				print(general);
-			}
-		}
-	}
+
 }
