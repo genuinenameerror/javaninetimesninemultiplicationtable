@@ -59,8 +59,34 @@ public class ninetimesninemultiplicationtable {
 		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
 		System.out.println("입력된 수 : " + newnumber);
 		
+		number2 = 1;		
 		result = newnumber * number2;
 		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		number2 = number2 + 1;
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
+		
 		
 	}
 
