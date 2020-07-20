@@ -2,57 +2,22 @@ package ninetimesninemultiplicationtable;
 import java.util.Scanner;
 
 public class ninetimesninemultiplicationtable {
-	public static void main(String[] args) {
-//		// 2단
-//		System.out.println("2 x 1 = " + 2*1);
-//		System.out.println("2 x 2 = " + 2*2);
-//		System.out.println("2 x 3 = " + 2*3);
-//		System.out.println("2 x 4 = " + 2*4);
-//		System.out.println("2 x 5 = " + 2*5);
-//		System.out.println("2 x 6 = " + 2*6);
-//		System.out.println("2 x 7 = " + 2*7);
-//		System.out.println("2 x 8 = " + 2*8);
-//		System.out.println("2 x 9 = " + 2*9);
-//		//3단
-//		System.out.println("3 x 1 = " + 3*1);
-//		System.out.println("3 x 2 = " + 3*2);
-//		System.out.println("3 x 3 = " + 3*3);
-//		System.out.println("3 x 4 = " + 3*4);
-//		System.out.println("3 x 5 = " + 3*5);
-//		System.out.println("3 x 6 = " + 3*6);
-//		System.out.println("3 x 7 = " + 3*7);
-//		System.out.println("3 x 8 = " + 3*8);
-//		System.out.println("3 x 9 = " + 3*9);
-		
-		int number1 = 4;
-		int number2 = 1;
-		int result = number1 * number2;
-//		System.out.println(number1 + " x " + number2 + " = "+result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = number1 * number2; 
-//		System.out.println(number1 + " x " + number2 + " = " + result);
-		
+	public static int[] calculate(int times) { // 계산 저장
+		int[] result = new int[9];		
+		for (int n=0; n<result.length;n++) {
+			result[n]= times * (n+1);
+//				s[n]= m + " x " + (n+1) + " = " + k[n];							
+		}		
+		return result;		
+	}
+	public static void print(int[] result) { // 화면에 출력
+		String[] st = new String[9];
+		for (int n=0; n<result.length;n++) {
+			st[n] = result[n]/(n+1) + " x " + (n+1) + " = " + result[n];
+			System.out.println(st[n]);
+		}		
+	}
+	public static void main(String[] args) {	
 		System.out.println("");
 		System.out.println("몇 단부터 출력할까요? ");
 		Scanner scanner = new Scanner(System.in); 
@@ -66,65 +31,9 @@ public class ninetimesninemultiplicationtable {
 			System.out.println("잘못 입력했습니다");
 		}
 		else {
-//			int i=1;
-//			while (i<10) {
-//				System.out.println(newnumber + " x " + i + " = " + newnumber*i);
-//				i = i+1;
-//			}
-//			for (int j=1;j<10;j++) {
-//				System.out.println((newnumber) + " x " + j + " = " + (newnumber)*j);
-//			}
-			int[] k = new int[9];
-//			for (int l=0; l<k.length;l++) {
-//				k[l] = (newnumber+1) * (l+1);
-//				System.out.println((newnumber+1) + " x " 
-//						+ (l+1) + " = " + k[l]);
-//			}
-			
-			
-			// 추가 요구사항 연습
-			String[] s = new String[9];
-			
-			for (int m=newnumber; m<9+1;m++) {
-				for (int n=0; n<k.length;n++) {
-					k[n]= m * (n+1);
-					s[n]= m + " x " + (n+1) + " = " + k[n];
-					System.out.println(s[n]);
-				}
-			}
-			
-			
+			int[] k = calculate(newnumber);
+			print(k);			
 		}
-//		
-//		number2 = 1;		
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-//		number2 = number2 + 1;
-//		result = newnumber * number2;
-//		System.out.println(newnumber + " x " + number2 + " = " + result);
-		
-		
 	}
 
 }
