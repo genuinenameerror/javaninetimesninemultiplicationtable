@@ -1,4 +1,5 @@
 package ninetimesninemultiplicationtable;
+import java.util.Scanner;
 
 public class ninetimesninemultiplicationtable {
 	public static void main(String[] args) {
@@ -52,8 +53,14 @@ public class ninetimesninemultiplicationtable {
 		result = number1 * number2; 
 		System.out.println(number1 + " x " + number2 + " = " + result);
 		
+		System.out.println("");
+		System.out.println("몇 단을 출력할까요? ");
+		Scanner scanner = new Scanner(System.in); 
+		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
+		System.out.println("입력된 수 : " + newnumber);
 		
-		
+		result = newnumber * number2;
+		System.out.println(newnumber + " x " + number2 + " = " + result);
 		
 	}
 
