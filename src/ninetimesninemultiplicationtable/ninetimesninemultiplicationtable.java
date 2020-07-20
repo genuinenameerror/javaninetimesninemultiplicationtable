@@ -74,6 +74,12 @@ public class ninetimesninemultiplicationtable {
 			for (int j=1;j<10;j++) {
 				System.out.println((newnumber) + " x " + j + " = " + (newnumber)*j);
 			}
+			int[] k = new int[9];
+			for (int l=0; l<k.length;l++) {
+				k[l] = (newnumber+1) * (l+1);
+				System.out.println((newnumber+1) + " x " 
+						+ (l+1) + " = " + k[l]);
+			}
 			
 		}
 //		
