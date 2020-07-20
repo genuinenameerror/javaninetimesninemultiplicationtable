@@ -54,7 +54,7 @@ public class ninetimesninemultiplicationtable {
 //		System.out.println(number1 + " x " + number2 + " = " + result);
 		
 		System.out.println("");
-		System.out.println("몇 단을 출력할까요? ");
+		System.out.println("몇 단부터 출력할까요? ");
 		Scanner scanner = new Scanner(System.in); 
 		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
 		System.out.println("입력된 수 : " + newnumber);
@@ -71,15 +71,25 @@ public class ninetimesninemultiplicationtable {
 //				System.out.println(newnumber + " x " + i + " = " + newnumber*i);
 //				i = i+1;
 //			}
-			for (int j=1;j<10;j++) {
-				System.out.println((newnumber) + " x " + j + " = " + (newnumber)*j);
-			}
+//			for (int j=1;j<10;j++) {
+//				System.out.println((newnumber) + " x " + j + " = " + (newnumber)*j);
+//			}
 			int[] k = new int[9];
-			for (int l=0; l<k.length;l++) {
-				k[l] = (newnumber+1) * (l+1);
-				System.out.println((newnumber+1) + " x " 
-						+ (l+1) + " = " + k[l]);
+//			for (int l=0; l<k.length;l++) {
+//				k[l] = (newnumber+1) * (l+1);
+//				System.out.println((newnumber+1) + " x " 
+//						+ (l+1) + " = " + k[l]);
+//			}
+			// 추가 요구사항 연습
+			
+			for (int m=newnumber; m<9+1;m++) {
+				for (int n=0; n<k.length;n++) {
+					k[n]= m * (n+1);
+					System.out.println(m + " x " + (n+1)
+					+ " = " + k[n]);
+				}
 			}
+			
 			
 		}
 //		
