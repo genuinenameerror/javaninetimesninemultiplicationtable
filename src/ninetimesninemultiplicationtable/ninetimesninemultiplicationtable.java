@@ -80,13 +80,16 @@ public class ninetimesninemultiplicationtable {
 //				System.out.println((newnumber+1) + " x " 
 //						+ (l+1) + " = " + k[l]);
 //			}
+			
+			
 			// 추가 요구사항 연습
+			String[] s = new String[9];
 			
 			for (int m=newnumber; m<9+1;m++) {
 				for (int n=0; n<k.length;n++) {
 					k[n]= m * (n+1);
-					System.out.println(m + " x " + (n+1)
-					+ " = " + k[n]);
+					s[n]= m + " x " + (n+1) + " = " + k[n];
+					System.out.println(s[n]);
 				}
 			}
 			
