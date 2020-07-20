@@ -58,6 +58,24 @@ public class ninetimesninemultiplicationtable {
 		Scanner scanner = new Scanner(System.in); 
 		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
 		System.out.println("입력된 수 : " + newnumber);
+		if (newnumber <2) {
+			System.out.println("잘못 입력했습니다");
+			
+		}
+		else if (newnumber>9) {
+			System.out.println("잘못 입력했습니다");
+		}
+		else {
+//			int i=1;
+//			while (i<10) {
+//				System.out.println(newnumber + " x " + i + " = " + newnumber*i);
+//				i = i+1;
+//			}
+			for (int j=1;j<10;j++) {
+				System.out.println((newnumber) + " x " + j + " = " + (newnumber)+j);
+			}
+			
+		}
 //		
 //		number2 = 1;		
 //		result = newnumber * number2;
@@ -86,14 +104,7 @@ public class ninetimesninemultiplicationtable {
 //		number2 = number2 + 1;
 //		result = newnumber * number2;
 //		System.out.println(newnumber + " x " + number2 + " = " + result);
-		int i=1;
-		while (i<10) {
-			System.out.println(newnumber + " x " + i + " = " + newnumber*i);
-			i = i+1;
-		}
-		for (int j=1;j<10;j++) {
-			System.out.println((newnumber+1) + " x " + j + " = " + (newnumber+1)+j);
-		}
+		
 		
 	}
 
