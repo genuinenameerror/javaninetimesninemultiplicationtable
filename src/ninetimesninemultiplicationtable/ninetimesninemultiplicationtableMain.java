@@ -6,8 +6,14 @@ public class ninetimesninemultiplicationtableMain {
 		System.out.println("");
 		System.out.println("몇 단을 출력할까요? ");
 		Scanner scanner = new Scanner(System.in); 
-		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
-		System.out.println("입력된 수 : " + newnumber);
+//		int newnumber = scanner.nextInt(); // 입력된 정수값 저장 
+		String inputStr = scanner.nextLine();
+		
+		System.out.println("입력된 수 : " + inputStr);
+		String[] splitValues = inputStr.split(",");
+		int newnumber = Integer.parseInt(splitValues[0]);
+		int newnumber1 = Integer.parseInt(splitValues[1]);
+		
 //		if (newnumber <2) {
 //			System.out.println("잘못 입력했습니다");
 //			
@@ -19,9 +25,9 @@ public class ninetimesninemultiplicationtableMain {
 //			int[] k = ninetimesninemultiplicationtable.calculate(newnumber);
 //			ninetimesninemultiplicationtable.print(k);
 //			System.out.println(" ");
-			System.out.println(newnumber + " x " + newnumber + "단 출력");
+			System.out.println(newnumber + " x " + newnumber1 + "단 출력");
 			for (int i=2;i<newnumber+1;i++) {
-				int[] general = ninetimesninemultiplicationtable.calculate(i);
+				int[] general = ninetimesninemultiplicationtable.calculate(i,newnumber1);
 				ninetimesninemultiplicationtable.print(general);
 			}
 //		}
