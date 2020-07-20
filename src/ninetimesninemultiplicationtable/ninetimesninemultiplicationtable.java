@@ -91,6 +91,9 @@ public class ninetimesninemultiplicationtable {
 			System.out.println(newnumber + " x " + i + " = " + newnumber*i);
 			i = i+1;
 		}
+		for (int j=1;j<10;j++) {
+			System.out.println((newnumber+1) + " x " + j + " = " + (newnumber+1)+j);
+		}
 		
 	}
 
