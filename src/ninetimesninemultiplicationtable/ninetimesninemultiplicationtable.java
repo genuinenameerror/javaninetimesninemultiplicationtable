@@ -32,8 +32,12 @@ public class ninetimesninemultiplicationtable {
 		}
 		else {
 			int[] k = calculate(newnumber);
-			print(k);			
+			print(k);
+			System.out.println(" ");
+			for (int i=2;i<10;i++) {
+				int[] general = calculate(i);
+				print(general);
+			}
 		}
 	}
-
 }
